@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "graphql": "^15.5.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@types/graphql": "^14.5.0",
+    "@types/node": "^16.7.10",
+    "@types/yargs": "^17.0.2"
+  },
+  "name": "gqlinspector-core",
+  "version": "1.0.0",
+  "description": "Inspect GraphQL schema from endpoint",
+  "main": "index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/windowdong11/gqlinspector-core.git"
+  },
+  "keywords": [
+    "graphql"
+  ],
+  "author": "windowdong11",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/windowdong11/gqlinspector-core/issues"
+  },
+  "homepage": "https://github.com/windowdong11/gqlinspector-core#readme"
+}
