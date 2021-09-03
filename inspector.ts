@@ -239,7 +239,7 @@ export interface AnalyzeSchemaByTypeProps {
 }
 
 // * schema에서 curType를 찾아서 분석한 결과를 돌려줌
-export function analyzeSchemaByType(props: AnalyzeSchemaByTypeProps): ParsedIntrospectionType | undefined {
+export function analyzeSchemaByType(props: AnalyzeSchemaByTypeProps): ParsedIntrospectionType {
     const typeSchema = props.type
     if (typeSchema.kind === 'OBJECT' || typeSchema.kind === 'INTERFACE') {
         // * Query, Mutation, Subscription, Type(Object, Interface)
