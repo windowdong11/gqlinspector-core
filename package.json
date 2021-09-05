@@ -8,7 +8,7 @@
     "@types/node": "^16.7.10"
   },
   "name": "gqlinspector-core",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Inspect GraphQL schema from endpoint",
   "main": "index.ts",
   "scripts": {
