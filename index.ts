@@ -8,7 +8,7 @@ export interface InspectSchemaResult {
     parsedTypes: ParsedIntrospectionType[]
 }
 
-export default function inspectSchemaFromEndpoint(endpoint: string) {
+export default function inspectSchema(endpoint: string) {
     return getSchemaFromEndpoint(endpoint)
         .then((schema: IntrospectionSchema) => {
             return {
