@@ -17,3 +17,5 @@ export default function inspectSchema(endpoint: string) {
             }
         })
 }
+
+export * from './inspector'
