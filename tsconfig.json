@@ -1,5 +1,7 @@
 {
     "compilerOptions": {
         "lib": ["ES2018"],
+        "declaration": true,
+        "outDir": "./dist"
     },
 }

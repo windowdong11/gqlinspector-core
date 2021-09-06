@@ -10,9 +10,11 @@
   "name": "gqlinspector-core",
   "version": "1.0.3",
   "description": "Inspect GraphQL schema from endpoint",
-  "main": "index.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublish": "tsc"
   },
   "repository": {
     "type": "git",
