@@ -19,7 +19,7 @@ $ npm i gqlinspector-core
 import inspectSchema from 'gqlinspector-core'
 const endpoint = 'http://localhost:4000'
 inspectSchema(endpoint)
-    .thoen(result => {
+    .then(result => {
         doSomethingWithInspectionResult(result.schema)
         result.parsedTypes.forEach(parsedType => {
             doSomethingWithParsedType(parsedType)
