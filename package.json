@@ -8,11 +8,13 @@
     "@types/node": "^16.7.10"
   },
   "name": "gqlinspector-core",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Inspect GraphQL schema from endpoint",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "files": ["dist/**/*"],
+  "files": [
+    "dist/**/*"
+  ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "tsc"
