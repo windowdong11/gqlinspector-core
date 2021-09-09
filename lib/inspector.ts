@@ -156,6 +156,7 @@ export default function splitDirectives(description: string): SplitDirectivesRes
             }
         }
     }
+    result.description += description
     return result
 }
 
