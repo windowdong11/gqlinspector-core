@@ -50,7 +50,7 @@ export interface ParsedIntrospectionObjectType extends Omit<IntrospectionObjectT
     description?: string;
     directives?: Array<Directive>;
     fields: Array<ParsedIntrospectionField>;
-    interfaces: Array<string>;
+    interfaces?: Array<string>;
 }
 
 export interface ParsedIntrospectionInterfaceType extends Omit<IntrospectionInterfaceType, 'directives' | 'fields' | 'interfaces' | 'possibleTypes'> {
@@ -59,7 +59,7 @@ export interface ParsedIntrospectionInterfaceType extends Omit<IntrospectionInte
     description?: string;
     directives?: Array<Directive>;
     fields: Array<ParsedIntrospectionField>;
-    interfaces: Array<string>;
+    interfaces?: Array<string>;
     possibleTypes: Array<string>;
 }
 
@@ -283,7 +283,7 @@ export function analyzeSchemaByType(props: AnalyzeSchemaByTypeProps): ParsedIntr
                 ...typeSchema,
                 description: undefined,
                 fields,
-                interfaces: typeSchema.interfaces.map(intf => intf.name)
+                interfaces: typeSchema.interfaces?.map(intf => intf.name)
             }
         }
         else {
@@ -293,7 +293,7 @@ export function analyzeSchemaByType(props: AnalyzeSchemaByTypeProps): ParsedIntr
                 directives: undefined,
                 possibleTypes: typeSchema.possibleTypes.map(ty => ty.name),
                 fields,
-                interfaces: typeSchema.interfaces.map(intf => intf.name)
+                interfaces: typeSchema.interfaces?.map(intf => intf.name)
             }
         }
         if (typeSchema.description) {
